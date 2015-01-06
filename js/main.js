@@ -67,7 +67,6 @@ var ChartOfLoife = function (data) {
 	// offers
 	var offers = {
 		ctx: $("#offers canvas")[0].getContext("2d"),
-		size: {x: 600, y: 300},
 		data: {
 			labels: createLabels (),
 			datasets: [
@@ -83,7 +82,6 @@ var ChartOfLoife = function (data) {
 	// cancellations
 	var cancellations = {
 		ctx: $("#cancellations canvas")[0].getContext("2d"),
-		size: {x: 600, y: 300},
 		data: {
 			labels: createLabels (),
 			datasets: [
@@ -98,7 +96,6 @@ var ChartOfLoife = function (data) {
 	// customer
 	var customer = {
 		ctx: $("#customer canvas")[0].getContext("2d"),
-		size: {x: 600, y: 300},
 		data: {
 			labels: createLabels (),
 			datasets: [
@@ -113,7 +110,6 @@ var ChartOfLoife = function (data) {
 	// payday
 	var payday = {
 		ctx: $("#payday canvas")[0].getContext("2d"),
-		size: {x: 600, y: 300},
 		data: {
 			labels: createLabels (),
 			datasets: [
@@ -128,7 +124,6 @@ var ChartOfLoife = function (data) {
 	// delivery
 	var delivery = {
 		ctx: $("#delivery canvas")[0].getContext("2d"),
-		size: {x: 600, y: 300},
 		data: {
 			labels: createLabels (),
 			datasets: [
