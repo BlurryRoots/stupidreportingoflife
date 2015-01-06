@@ -1,0 +1,72 @@
+<doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<title>Reporting</title>
+
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css" />
+	</head>
+
+	<body>
+		<div class="container theme-showcase" role="main">
+			<h1>Report of Loife</h1>
+
+			<!--
+				* Verhältnis erstellter Angebote zu tatsächlich erteilten Aufträgen
+					+ Doughnut
+				* Anzahl stornierter Aufträge
+					+ Line || Bar
+				* Zahl der Neukunden
+					+ Line || Bar
+				* Durchschnittliche Zeitdauer zwischen Auftragserteilung und Zahlungseingang bei der HAPSAA
+					+ Line || Bar
+				* Durchschnittliche Zeitdauer zwischen der Fertigstellung eines Produkts und der tatsächlichen Auslieferung durch UPPS beim Kunden
+					+ Line|| Bar
+			-->
+
+			<div id="offers">
+				<div class="page-header">
+					<h2>Angebot / Aufträge</h2>
+				</div>
+				<canvas width="600" height="300"/></canvas>
+			</div>
+
+			<div id="cancellations">
+				<div class="page-header">
+					<h2>Stornos</h2>
+				</div>
+				<canvas width="600" height="300"/></canvas>
+			</div>
+
+			<div id="customer">
+				<div class="page-header">
+					<h2>Neukunden</h2>
+				</div>
+				<canvas width="600" height="300"/></canvas>
+			</div>
+
+			<div id="payday">
+				<div class="page-header">
+					<h2>Dauer bis Zahlungseingang ab Rechnungsdatum</h2>
+				</div>
+				<canvas width="600" height="300"/></canvas>
+			</div>
+
+			<div id="delivery">
+				<div class="page-header">
+					<h2>Dauer Fertigung bis Auslieferung</h2>
+				</div>
+				<canvas width="600" height="300"/></canvas>
+			</div>
+		</div>
+
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/chart.js"></script>
+		<script type="text/javascript" src="js/main.js"></script>
+	</body>
+</html>
